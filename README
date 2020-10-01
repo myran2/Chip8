@@ -1,0 +1,12 @@
+# A Chip-8 Emulator in (kinda modern) C++
+
+## Usage
+    chip8.exe "romName.rom"
+
+## Keybinds
+The original Chip-8 had a 4x4 numpad.
+The following keys emulate that numpad:
+    1 2 3 4
+    Q W E R
+    A S D F
+    Z X C V

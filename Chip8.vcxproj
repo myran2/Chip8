@@ -77,6 +77,14 @@
     <IncludePath>C:\Users\Henry\source\repos\Chip8\SDL2\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Henry\source\repos\Chip8\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Henry\Chip8\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Henry\Chip8\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\Henry\Chip8\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Henry\Chip8\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>

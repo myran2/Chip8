@@ -3,6 +3,12 @@
 
 int main(int argc, char** argv) 
 {
+    if (argc < 2)
+    {
+        printf("Please supply a chip8 rom. Correct syntax is:\n%s \"romname.rom\" [-tick tickRate]\n", argv[0]);
+        return 1;
+    }
+    
     int tickrate = 500;
     if (argc >= 3)
     {
@@ -24,7 +30,7 @@ int main(int argc, char** argv)
 
 
 
-    errorCode = emu.LoadGame("C:\\Users\\Henry\\source\\repos\\Chip8\\Debug\\INVADERS.ch8");
+    errorCode = emu.LoadGame(argv[1]);
     if (errorCode != 0)
     {
         printf("Failed to load Chip8 rom %s. Error code: %d\n", "TEST_ROM", errorCode);

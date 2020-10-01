@@ -295,9 +295,9 @@ void Chip8::Run()
     m_pixel = SDL_CreateRGBSurface(0, 10, 10, 32, 0, 0, 0, 0);
     SDL_FillRect(m_pixel, NULL, SDL_MapRGB(m_pixel->format, 255, 255, 255));
 
-
     // determine minimum time that must be spent on each tick to match the user-specified rate (or 500hz by default)
     auto minTimePerTickms = std::chrono::milliseconds(1000 / m_tickrate);
+
     // delay and beep timer are always 60hz
     auto minTimePerTimerms = std::chrono::milliseconds(1000 / 60);
 
